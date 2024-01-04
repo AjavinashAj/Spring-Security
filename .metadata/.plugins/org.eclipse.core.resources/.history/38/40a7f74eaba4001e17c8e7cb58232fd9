@@ -1,0 +1,5 @@
+package com.dakr.binding;
+
+public class AuthenticationResponse {
+
+}

@@ -1,0 +1,19 @@
+package com.dakr.security;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+
+import com.dakr.filter.JwtRequestFilter;
+import com.dakr.service.MyUserDetailsService;
+
+@SuppressWarnings("unused")
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig {
+	
+	@Autowired
+	private MyUserDetailsService myUserDetailsService;
+	@Autowired
+	private JwtRequestFilter jwtRequestFilter;
+
+}
